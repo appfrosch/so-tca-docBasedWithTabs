@@ -13,19 +13,19 @@ struct AppView: View {
   @Binding var document: so_tca_docBasedWithTabsDocument
   let store: StoreOf<AppFeature>
 
-  init(
-    document: Binding<so_tca_docBasedWithTabsDocument>
-  ) {
-    self._document = document
-    self.store = Store(
-      initialState: AppFeature.State(
-        text: document.wrappedValue.text,
-        selectedTab: .tab1
-      )
-    ) {
-      AppFeature()
-    }
-  }
+//  init(
+//    document: Binding<so_tca_docBasedWithTabsDocument>
+//  ) {
+//    self._document = document
+//    self.store = Store(
+//      initialState: AppFeature.State(
+//        text: document.wrappedValue.text,
+//        selectedTab: .tab1
+//      )
+//    ) {
+//      AppFeature()
+//    }
+//  }
 
   var body: some View {
     WithViewStore(store, observe: { $0 }) { viewStore in
@@ -60,6 +60,10 @@ struct AppView: View {
 }
 
 #Preview {
-  AppView(document: .constant(so_tca_docBasedWithTabsDocument()))
+  AppView(
+    document: .constant(so_tca_docBasedWithTabsDocument()),
+    store: Store(initialState: AppFeature.State(text: "")) {
+      AppFeature()
+    })
 }
 
