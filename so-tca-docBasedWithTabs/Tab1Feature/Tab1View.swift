@@ -16,8 +16,7 @@ struct Tab1View: View {
     WithViewStore(store, observe: { $0 }) { viewStore in
       VStack(alignment: .leading) {
         Text("Editing disabled")
-        TextEditor(text: viewStore.$text)
-          .disabled(true)
+        TextEditor(text: .constant(viewStore.$text.wrappedValue))
           .padding()
       }
       .padding()

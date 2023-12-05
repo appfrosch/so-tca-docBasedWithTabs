@@ -27,6 +27,7 @@ struct Tab2Feature {
         return .none
       }
     }
+    ._printChanges()
   }
 }
 

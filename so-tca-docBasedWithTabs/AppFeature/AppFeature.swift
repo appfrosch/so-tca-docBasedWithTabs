@@ -17,7 +17,7 @@ struct AppFeature {
 
   struct State: Equatable {
     @BindingState var text: String
-    @BindingState var selectedTab: Tab
+    var selectedTab: Tab
 
     var tab1: Tab1Feature.State
     var tab2: Tab2Feature.State
@@ -68,6 +68,7 @@ struct AppFeature {
     ) {
       Tab2Feature()
     }
+    ._printChanges()
   }
 }
 

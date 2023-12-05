@@ -29,7 +29,12 @@ struct AppView: View {
 
   var body: some View {
     WithViewStore(store, observe: { $0 }) { viewStore in
-      TabView(selection: viewStore.$selectedTab) {
+      TabView(
+        selection: viewStore.binding(
+          get: { $0.selectedTab },
+          send: AppFeature.Action.setTabTo
+        )
+      ) {
         Tab1View(
           store: self.store.scope(
             state: \.tab1,
