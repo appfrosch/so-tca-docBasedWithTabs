@@ -17,6 +17,11 @@ struct Tab1Feature {
 
   enum Action: BindableAction, Equatable {
     case binding(BindingAction<State>)
+    case delegate(Delegate)
+
+    enum Delegate: Equatable {
+      case setTabTo(AppFeature.Tab)
+    }
   }
 
   var body: some ReducerOf<Self> {
@@ -24,6 +29,9 @@ struct Tab1Feature {
     Reduce { state, action in
       switch action {
       case .binding:
+        return .none
+
+      case .delegate:
         return .none
       }
     }

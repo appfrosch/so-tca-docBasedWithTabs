@@ -52,6 +52,10 @@ struct AppFeature {
         state.selectedTab = tab
         return .none
 
+      case .tab1(.delegate(.setTabTo(let tab))):
+        state.selectedTab = tab
+        return .none
+
       case .tab1, .tab2:
         return .none
       }

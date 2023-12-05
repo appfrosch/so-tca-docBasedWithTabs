@@ -18,6 +18,9 @@ struct Tab1View: View {
         Text("Editing disabled")
         TextEditor(text: .constant(viewStore.$text.wrappedValue))
           .padding()
+        Button("Change to tab 2") {
+          viewStore.send(.delegate(.setTabTo(.tab2)))
+        }
       }
       .padding()
     }
