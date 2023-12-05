@@ -11,7 +11,7 @@ import SwiftUI
 struct so_tca_docBasedWithTabsApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: so_tca_docBasedWithTabsDocument()) { file in
-            ContentView(document: file.$document)
+            AppView(document: file.$document)
         }
     }
 }
