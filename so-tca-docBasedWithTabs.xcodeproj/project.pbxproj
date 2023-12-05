@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		CD0610FE2B1E3C9E006E332C /* so_tca_docBasedWithTabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0610FD2B1E3C9E006E332C /* so_tca_docBasedWithTabsApp.swift */; };
 		CD0611002B1E3C9E006E332C /* so_tca_docBasedWithTabsDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0610FF2B1E3C9E006E332C /* so_tca_docBasedWithTabsDocument.swift */; };
-		CD0611022B1E3C9E006E332C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611012B1E3C9E006E332C /* ContentView.swift */; };
 		CD0611042B1E3CA0006E332C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0611032B1E3CA0006E332C /* Assets.xcassets */; };
 		CD0611092B1E3CA0006E332C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0611082B1E3CA0006E332C /* Preview Assets.xcassets */; };
 		CD0611132B1E3CA0006E332C /* so_tca_docBasedWithTabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611122B1E3CA0006E332C /* so_tca_docBasedWithTabsTests.swift */; };
 		CD06111D2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06111C2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITests.swift */; };
 		CD06111F2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06111E2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITestsLaunchTests.swift */; };
 		CD06112D2B1EFF18006E332C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CD06112C2B1EFF18006E332C /* ComposableArchitecture */; };
+		CD06112F2B1F87C3006E332C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06112E2B1F87C3006E332C /* AppView.swift */; };
+		CD0611312B1F87F3006E332C /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611302B1F87F3006E332C /* AppFeature.swift */; };
+		CD0611342B1F8825006E332C /* Tab1Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611332B1F8825006E332C /* Tab1Feature.swift */; };
+		CD0611362B1F8849006E332C /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611352B1F8849006E332C /* Tab1View.swift */; };
+		CD0611382B1F887D006E332C /* Tab2Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0611372B1F887D006E332C /* Tab2Feature.swift */; };
+		CD06113B2B1F88B5006E332C /* Tab2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06113A2B1F88B5006E332C /* Tab2View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		CD0610FA2B1E3C9E006E332C /* so-tca-docBasedWithTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "so-tca-docBasedWithTabs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0610FD2B1E3C9E006E332C /* so_tca_docBasedWithTabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = so_tca_docBasedWithTabsApp.swift; sourceTree = "<group>"; };
 		CD0610FF2B1E3C9E006E332C /* so_tca_docBasedWithTabsDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = so_tca_docBasedWithTabsDocument.swift; sourceTree = "<group>"; };
-		CD0611012B1E3C9E006E332C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD0611032B1E3CA0006E332C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0611052B1E3CA0006E332C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0611062B1E3CA0006E332C /* so_tca_docBasedWithTabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = so_tca_docBasedWithTabs.entitlements; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		CD0611182B1E3CA0006E332C /* so-tca-docBasedWithTabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "so-tca-docBasedWithTabsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD06111C2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = so_tca_docBasedWithTabsUITests.swift; sourceTree = "<group>"; };
 		CD06111E2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = so_tca_docBasedWithTabsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD06112E2B1F87C3006E332C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		CD0611302B1F87F3006E332C /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		CD0611332B1F8825006E332C /* Tab1Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Feature.swift; sourceTree = "<group>"; };
+		CD0611352B1F8849006E332C /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
+		CD0611372B1F887D006E332C /* Tab2Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Feature.swift; sourceTree = "<group>"; };
+		CD06113A2B1F88B5006E332C /* Tab2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +112,9 @@
 			children = (
 				CD0610FD2B1E3C9E006E332C /* so_tca_docBasedWithTabsApp.swift */,
 				CD0610FF2B1E3C9E006E332C /* so_tca_docBasedWithTabsDocument.swift */,
-				CD0611012B1E3C9E006E332C /* ContentView.swift */,
+				CD0611322B1F8816006E332C /* AppFeature */,
+				CD0611392B1F88A1006E332C /* Tab1Feature */,
+				CD06113C2B1F88ED006E332C /* Tab2Feature */,
 				CD0611032B1E3CA0006E332C /* Assets.xcassets */,
 				CD0611052B1E3CA0006E332C /* Info.plist */,
 				CD0611062B1E3CA0006E332C /* so_tca_docBasedWithTabs.entitlements */,
@@ -134,6 +146,33 @@
 				CD06111E2B1E3CA0006E332C /* so_tca_docBasedWithTabsUITestsLaunchTests.swift */,
 			);
 			path = "so-tca-docBasedWithTabsUITests";
+			sourceTree = "<group>";
+		};
+		CD0611322B1F8816006E332C /* AppFeature */ = {
+			isa = PBXGroup;
+			children = (
+				CD0611302B1F87F3006E332C /* AppFeature.swift */,
+				CD06112E2B1F87C3006E332C /* AppView.swift */,
+			);
+			path = AppFeature;
+			sourceTree = "<group>";
+		};
+		CD0611392B1F88A1006E332C /* Tab1Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CD0611332B1F8825006E332C /* Tab1Feature.swift */,
+				CD0611352B1F8849006E332C /* Tab1View.swift */,
+			);
+			path = Tab1Feature;
+			sourceTree = "<group>";
+		};
+		CD06113C2B1F88ED006E332C /* Tab2Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CD0611372B1F887D006E332C /* Tab2Feature.swift */,
+				CD06113A2B1F88B5006E332C /* Tab2View.swift */,
+			);
+			path = Tab2Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0611342B1F8825006E332C /* Tab1Feature.swift in Sources */,
+				CD0611382B1F887D006E332C /* Tab2Feature.swift in Sources */,
+				CD06112F2B1F87C3006E332C /* AppView.swift in Sources */,
+				CD0611312B1F87F3006E332C /* AppFeature.swift in Sources */,
 				CD0611002B1E3C9E006E332C /* so_tca_docBasedWithTabsDocument.swift in Sources */,
 				CD0610FE2B1E3C9E006E332C /* so_tca_docBasedWithTabsApp.swift in Sources */,
-				CD0611022B1E3C9E006E332C /* ContentView.swift in Sources */,
+				CD06113B2B1F88B5006E332C /* Tab2View.swift in Sources */,
+				CD0611362B1F8849006E332C /* Tab1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
